@@ -1,23 +1,23 @@
 ## Tera-Settings-Saver 2.1
 
-Tera settings saver is a module for TeraToolbox which stops your settings from getting reset, aswell as it allows you to easily transfer settings between characters/servers/region
+Tera settings saver es un módulo para TeraToolbox que evita que se restablezcan sus configuraciones, y también le permite transferir fácilmente configuraciones entre personajes/servidores/región
 
-# Commands
-Note, if using the commands in the proxy channel or `/8`, ignore the `!` prefix
+# Comandos
+Tenga en cuenta que si utiliza los comandos en el canal proxy o `/8`, ignore el prefijo `!`
 
-Command | Argument(s) | Example | Description
+Comando | Argumento(s) | Ejemplo | Descripción
 ---|---|---|---
-**!settings** | lock | !settings lock | locks your current settings
-**!settings** | Filename | !settings name-4001 | replaces your current settings with the settings of the desired file name which can be found below
+**!settings** | lock | !settings lock | bloquea su configuración actual
+**!settings** | Filename | !settings name-4001 | reemplaza su configuración actual con la configuración del nombre de archivo deseado que se puede encontrar a continuación
 
-available aliases instead of `!settings` are `!keybinds`, `!key` and `!set` kept as a "legacy" option for those that may have used one of them in the past
+los alias disponibles en lugar de `!settings` son `!keybinds`, `!key` y `!set` mantenidos como una opción "heredada" para aquellos que pueden haber usado uno de ellos en el pasado
 
-more clear example for those that need it, say for example you had a character named "Kaseatard" that you wanted to have the settings of on another character, you would go to the folder below and find its file name and use the command `/8 settings Kaseatard-4001`
+un ejemplo más claro para aquellos que lo necesitan, digamos, por ejemplo, que tenía un personaje llamado "Kaseatard" del que quería tener la configuración en otro personaje, iría a la carpeta a continuación y encontraría su nombre de archivo y usaría el comando `/8 settings Kaseatard-4001`
 
-(note, make sure to actually look at the file name and not use the numbers used in this example since they will 100% be different)
+(tenga en cuenta, asegúrese de mirar el nombre del archivo y no use los números utilizados en este ejemplo, ya que serán 100% diferentes)
 
-## File names can be found by going to `[toolbox folder]/mods/Tera-Settings-Saver/data`
-or by clicking `Show Mods Folder` in the toolbox ui and going to `/Tera-Settings-Saver/data` from there
+## Los nombres de los archivos se pueden encontrar yendo a `[toolbox folder]/mods/Tera-Settings-Saver/data`
+o haciendo clic en `Mostrar carpeta de mods` en la interfaz de usuario de la caja de herramientas y yendo a `/Tera-Settings-Saver/data` desde allí
 
 ### Bugs:
-Can potentially reset a glyph & item set page if the settings has been reset(it will print in the chat)
+Puede potencialmente restablecer una página de conjunto de elementos y glifos si la configuración se ha restablecido (se imprimirá en el chat)

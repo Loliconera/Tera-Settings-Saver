@@ -35,7 +35,7 @@ class KeybindSaver {
 
         function cmdKeybind(arg) {
             if(!arg) {
-                command.message(`You need to include a file path(look in data folder)`);
+                command.message(`Debe incluir una ruta de archivo (busque en la carpeta date)`);
                 return;
             }
 
@@ -44,14 +44,14 @@ class KeybindSaver {
                 data = getJsonData(settingsPath);
                 if(!data.lock) data.lock = false;
                 data.lock = !data.lock;
-                command.message(`Keybind lock has been set to ${data.lock}.`);
+                command.message(`El bloqueo de combinación de teclas se ha establecido en ${data.lock}.`);
             }else {
                 data = getJsonData(`./data/${arg}.json`);
                 if(!data) {
-                    command.message(`Invalid file name`);
+                    command.message(`Nombre de archivo inválido`);
                     return;
                 }
-                command.message(`Keybind transferred, relog to get them.`);
+                command.message(`Combinación de teclas transferida, Relog para conseguirlas.`);
             }
             saveJsonData(settingsPath, data);
         }
@@ -64,7 +64,7 @@ class KeybindSaver {
                 if(data && data[key]) {
                     let newPayload = Buffer.from(`${data[key].length}${getPacketInfo(payload).opcode}${data[key].payload}`, 'hex');
                     if(newPayload.toString() === payload.toString()) return true;
-                    setTimeout(()=> {command.message(`Your keybinds/settings were reset, fixing it. Note: One(or more) glyph page might be fucked`)}, 5000);
+                    setTimeout(()=> {command.message(`Sus combinaciones de teclas/configuraciones se reiniciaron, arreglándolo. Nota: Una (o más) página de glifos podría estar jodidaa`)}, 5000);
                     dispatch.toClient(newPayload);
                     return false;
                 }else{

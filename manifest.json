@@ -1,15 +1,16 @@
 {
-	"files": {
-		"README.md": "eee9f89ee371a99ad642f158afcdaef164f22877a92200dca87e0cf6c9d3d007",
-		"index.js": "eecf29921db877707a1f7139530315617b532086593a22491763e58da0e8f8da"
-	},
-	"defs": {
-		"C_LOAD_TOPO_FIN": "raw",
-		"C_SAVE_CLIENT_ACCOUNT_SETTING": "raw",
-		"C_SAVE_CLIENT_USER_SETTING": "raw",
-		"S_LOAD_CLIENT_ACCOUNT_SETTING": "raw",
-		"S_LOAD_CLIENT_USER_SETTING": "raw",
-		"S_LOAD_TOPO": "raw",
-		"S_RETURN_TO_LOBBY": "raw"
-	}
+    "files": {
+        "README.md": "ede562179f64772abe7bda38ed123cdf9cc4ffc61486cb801e6d7de3f34ec146",
+        "index.js": "81c916d138254f93a06db329becf720b8a76f3d2050e723b253e6c94ef22ad48",
+        "module.json": "e4a6ed3145ab979ece3272f00601b658224b44b6cb6fd4b973a1be40d5247690"
+    },
+    "defs": {
+        "C_LOAD_TOPO_FIN": "raw",
+        "C_SAVE_CLIENT_ACCOUNT_SETTING": "raw",
+        "C_SAVE_CLIENT_USER_SETTING": "raw",
+        "S_LOAD_CLIENT_ACCOUNT_SETTING": "raw",
+        "S_LOAD_CLIENT_USER_SETTING": "raw",
+        "S_LOAD_TOPO": "raw",
+        "S_RETURN_TO_LOBBY": "raw"
+    }
 }
